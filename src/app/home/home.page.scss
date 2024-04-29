@@ -1,27 +1,36 @@
 #container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.termometro {
+  position: relative;
+  width: 20px;
+  height: 300px;
+  /* Center the thermometer horizontally using margin */
+  margin: 0 auto;
+}
+
+.termometro-palo {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #ccc;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.termometro-circulo {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.termometro-circulo.rojo {
+  background-color: #f00;
 }
