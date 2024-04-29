@@ -1,0 +1,7 @@
+{
+  "name": "A5_Sum_ChaconE2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
